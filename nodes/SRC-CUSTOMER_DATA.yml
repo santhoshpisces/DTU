@@ -1,0 +1,96 @@
+fileVersion: 1
+id: 45596055-be4b-4e07-8e3e-95fc658ff515
+name: CUSTOMER_DATA
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ca0e27be-f628-486e-9617-79cc23c59e31
+          stepCounter: 45596055-be4b-4e07-8e3e-95fc658ff515
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CUSTOMERID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 42a94cce-e9db-4a9d-9795-c638381d7299
+          stepCounter: 45596055-be4b-4e07-8e3e-95fc658ff515
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CUSTNAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 921faabc-1ec4-4fe5-952b-7f3a7a7f0c3a
+          stepCounter: 45596055-be4b-4e07-8e3e-95fc658ff515
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: MARKS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef0906dd-c76e-4d88-aa9b-4d6511c0075c
+          stepCounter: 45596055-be4b-4e07-8e3e-95fc658ff515
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: DEPARTMENTS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SRC', 'CUSTOMER_DATA') }}
+  name: CUSTOMER_DATA
+  schema: ""
+  sqlType: Source
+  table: CUSTOMER_DATA
+  type: sourceInput
+  version: 1
+type: Node
